@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - DigitalODS: El Arte del Cambio - Sesión 4</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .header { background-color: #2196F3; color: white; text-align: center; padding: 10px; } /* Blue Accent */
+        .activity { margin-bottom: 20px; }
+        .banner {
+            background-color: #2196F3; /* Blue Accent */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top;
+        }
+        span[style*="color: red;"] {
+            font-weight: bold;
+        }
+         ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555;} /* Style for static title */
+    </style>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content) {
+                content.style.display = content.style.display === "none" ? "block" : "none";
+            }
+        }
+
+        // Initialize content hidden state on load
+        window.onload = () => {
+             // Ensure all content starts hidden
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Playbook - Taller: DigitalODS: El Arte del Cambio (2º Primaria) - Sesión 4</h1>
+    </div>
+    <div class="container">
+        <!-- Static Time Title -->
+        <h2 class="time-title">Tiempo efectivo de clase: 40 minutos</h2>
+
+        <!-- De un Vistazo y Preparación Previa -->
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('activity_0_content')">
+                <div class="title">📝 De un Vistazo: Sesión 4</div>
+            </div>
+            <div id="activity_0_content" class="content">
+                <table>
+                    <tr>
+                        <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
+                            <strong>🎯 Objetivos:</strong>
+                            <ul>
+                                <li>Consolidar la idea de arte interactivo, la interacción y la secuencia en un prototipo conceptual final (T-Bar).</li>
+                                <li>Conectar explícitamente el prototipo conceptual con los bloques de Scratch necesarios.</li>
+                                <li>Presentar los prototipos conceptuales a los demás equipos.</li>
+                                <li>Practicar dar y recibir retroalimentación constructiva (Like, Wish, Wonder).</li>
+                                <li>Cerrar el taller y motivar para la fase de desarrollo real en Scratch.</li>
+                            </ul>
+                            <strong>💡 Tácticas Principales:</strong> T-Bar (Adaptado: Mi Prototipo), Like, Wish, Wonder (para retroalimentación).
+                            <br><br>
+                            <strong>🔑 Entregable Clave:</strong> Prototipo Conceptual en Papel (Formato T-Bar) por equipo + Notas de retroalimentación LWW recibidas.
+                        </td>
+                        <td style="width: 50%; padding: 10px;">
+                            <strong>🛠️ Materiales Específicos:</strong>
+                            <ul>
+                                <li>Proyector o pantalla interactiva.</li>
+                                <li>Presentación de diapositivas (Diapositivas 23-28 detalladas abajo).</li>
+                                <li>Acceso a tablero Miro (o similar) con espacio para cada equipo y plantilla T-Bar, o rotafolios/papeles grandes con formato T-Bar.</li>
+                                <li>Storyboards de la Sesión 3.</li>
+                                <li>Lápices, marcadores, colores.</li>
+                                <li>Notas adhesivas pequeñas (físicas o digitales) para la retroalimentación LWW.</li>
+                            </ul>
+                             <strong>🔧 Preparación Previa para ESTA Sesión:</strong>
+                            <ol>
+                                <li><strong>Presentación Lista:</strong> Tener listas las Diapositivas 23 a 28.</li>
+                                <li><strong>Plantillas T-Bar:</strong> Preparar plantillas T-Bar (digitales en Miro o físicas en papel grande) para cada equipo. Recordar: espacio grande izquierda para dibujo, espacio derecha para descripción/Scratch, línea arriba para título.</li>
+                                <li><strong>Material Retro LWW:</strong> Tener notas adhesivas listas (o instruir sobre cómo usar comentarios en Miro) para el Like, Wish, Wonder. Preparar la lámina explicativa (Diapositiva 27).</li>
+                                <li><strong>Espacio de Trabajo:</strong> Asegurarse de que los equipos tengan acceso a sus storyboards y espacio para crear el T-Bar.</li>
+                                <li><strong>Ejemplo VoC:</strong> Tener listo el texto y descripción del T-Bar de "Voices for Change".</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Desarrollo de la Sesión -->
+
+        <!-- Actividad 1: Recap e Integración -->
+        <div id="activity-1" class="activity" data-time="3">
+            <div class="banner" onclick="toggleContent('activity_1_content')">
+                <div class="title">🔄 Actividad 1: Recap e Integración ⏰ Tiempo: 3 minutos</div>
+            </div>
+            <div id="activity_1_content" class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Proyectar la <strong>Diapositiva 23</strong>: "¡Sesión Final! ¡Prototipo y Lanzamiento!". Mostrar título, imagen (cohete despegando hecho de dibujos/bloques Scratch, o versión final arte digital) y texto introductorio.
+                        </td>
+                        <td>
+                            "¡Artistas digitales, bienvenidos a la GRAN FINAL de 'DigitalODS: El Arte del Cambio'! En la sesión pasada, crearon historias increíbles en 3 pasos (sus storyboards) para mostrar cómo funcionaría su arte interactivo."
+                            <br><br>
+                            "Hoy vamos a tomar esa historia, esa interacción genial que definieron, y la vamos a convertir en el <strong>mapa final</strong>, el <strong>prototipo conceptual</strong> de su proyecto. ¡Y luego, lo 'lanzaremos' al mundo (bueno, a nuestros compañeros)!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 2: Táctica 8: Mi Prototipo (T-Bar Adaptado - Trabajo Principal) -->
+        <div id="activity-2" class="activity" data-time="20">
+            <div class="banner" onclick="toggleContent('activity_2_content')">
+                <div class="title">🗺️ Actividad 2: Táctica 8: Mi Prototipo (T-Bar Adaptado) ⏰ Tiempo: 20 minutos</div>
+            </div>
+            <div id="activity_2_content" class="content">
+                <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Proyectar la <strong>Diapositiva 24</strong>: "¡Nivel 7! Mi Prototipo - ¡El Mapa Final en T-Bar!". Mostrar título, instrucción con descripción de Lado Izquierdo/Derecho, imagen de plantilla T-Bar vacía y luego un ejemplo simple llenado (no el de VoC aún). Entregar plantillas T-Bar.
+                        </td>
+                        <td>
+                            "¡Último nivel de creación: 'Mi Prototipo' con el <strong>T-Bar</strong>! Tomen su plantilla T-Bar (en Miro o papel). ¡Este será su plan maestro!"
+                            <br><br>
+                            "**Lado Izquierdo (el grande):** ¡Aquí va el DIBUJO PRINCIPAL! Basándose en su storyboard, dibujen cómo se ve su obra de arte interactiva finalizada. ¡Que se vea genial! Incluyan los elementos importantes: personajes, fondos, botones, ¡todo!"
+                             <br><br>
+                            "**Lado Derecho (el más pequeño):** Aquí va la EXPLICACIÓN. Usen dibujos y palabras simples para responder:"
+                            <br>
+                            *   "<strong>¿Qué es?</strong> (Una frase que lo describa, ej: 'Un acuario interactivo sobre la basura')."
+                             <br>
+                            *   "<strong>¿Qué hace? / Interacción:</strong> (Describan la interacción principal que definieron, ej: 'Al hacer clic en la botella de plástico, el pez se pone triste'). ¡Usen su storyboard como guía!"
+                             <br>
+                            *   "<strong>¿Cómo usaríamos Scratch?:</strong> Cómo harían que su arte interactivo funcione con Scratch." <em>(Anticipar que esto se detallará más en la siguiente actividad).</em>
+                            <br><br>
+                            "¡Trabajen en equipo para crear el mejor prototipo T-Bar posible! ¡Tienen 20 minutos!"
+                             <br><br>
+                             <em>(Circular, ayudar a los equipos a traducir su storyboard al formato T-Bar, asegurando que el dibujo y la descripción coincidan).</em>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 2:</strong> Proyectar la <strong>Diapositiva 25</strong>: "¡T-Bar de Voices for Change!". Mostrar el ejemplo completo del T-Bar de VoC con dibujo y descripciones detalladas como guía.
+                        </td>
+                        <td>
+                             "¡Este es el último paso súper importante! Después de toda la exploración, los creadores de 'Voices for Change' hicieron 'Mi Prototipo' usando algo llamado <strong>T-Bar</strong>. ¡Es como el mapa final de su tesoro! Les muestra exactamente qué van a construir. ¡Imaginen una hoja dividida así!”
+                             <br><br>
+                             <em>(Señalando el lado izquierdo del ejemplo en la Diapositiva 25):</em>
+                             "A la izquierda, dibujaron ¡cómo se vería su mundo! El paisaje con montañas de triángulos, el explorador listo para la aventura, y las luces brillantes esperando ser descubiertas."
+                             <br><br>
+                             <em>(Señalando el lado derecho del ejemplo en la Diapositiva 25):</em>
+                             "A la derecha, escribieron y dibujaron qué es lo que hacía su mundo:"
+                             <br>
+                             *   "<strong>¿Qué es?:</strong> Un mundo digital para explorar (Dibujo: mundo + lupa). Encuentras luces que son voces secretas (Dibujo: luz = nube de diálogo)."
+                             <br>
+                             *   "<strong>¿Qué hace?/Interacción:</strong> Te mueves por el mundo (Dibujo: flechas). Te acercas a una luz (Dibujo: explorador acercándose). La luz brilla más y suena una voz (Dibujo: luz grande + ondas de sonido). Descubres quién habló (Dibujo: pequeño mapa o bandera)."
+                             <br>
+                             *   "<strong>¿Cómo usaríamos Scratch?:</strong> (Aquí pusieron notas súper secretas para los programadores, ¡que veremos en un minuto!)."
+                             <br><br>
+                            "¡Usen este ejemplo para completar su propio T-Bar!"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                           <strong>Paso 3:</strong> Concluir tiempo de trabajo. Marcar entregable parcial.
+                        </td>
+                        <td>
+                            "¡Tiempo! ¡Esos T-Bars se ven increíbles!"
+                             <br><br>
+                            <em>(Consejo Maestro: Ayuda a los equipos a ser claros y concisos en la descripción. El dibujo debe ser el protagonista en el lado izquierdo.)</em>
+                             <br><br>
+                            <em>(Entregable Parcial: Borrador del T-Bar por equipo (dibujo y descripción inicial)).</em>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+         <!-- Actividad 3: Conexión Scratch en Prototipo -->
+        <div id="activity-3" class="activity" data-time="7">
+            <div class="banner" onclick="toggleContent('activity_3_content')">
+                 <div class="title">🔗 Actividad 3: Conexión Scratch en Prototipo ⏰ Tiempo: 7 minutos</div>
+            </div>
+            <div id="activity_3_content" class="content">
+                 <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1:</strong> Explicar la tarea de añadir notas sobre bloques Scratch en el T-Bar. Usar <strong>Diapositiva 25</strong> (Ejemplo T-Bar VoC) para mostrar dónde irían las notas de Scratch.
+                        </td>
+                        <td>
+                            "¡Sus prototipos T-Bar se ven geniales! Ahora, un último detalle súper importante para que estén listos para programar después: ¡la conexión con Scratch!"
+                            <br><br>
+                             "Vuelvan a mirar la parte derecha de su T-Bar, donde describieron la interacción ('Qué hace'). Justo debajo, añadan unas notas rápidas o dibujos simples de <strong>qué bloques de Scratch</strong> creen que usarían para hacer que esa interacción funcione."
+                             <br><br>
+                            "Por ejemplo, si su interacción es 'Al hacer clic en el sol, cambia a luna', podrían dibujar un bloque <strong>'al hacer clic en este objeto'</strong> y un bloque <strong>'cambiar disfraz a [luna]'</strong>. ¡Solo los bloques más importantes!"
+                             <br><br>
+                             <em>(Señalar en el ejemplo de la Diapositiva 25 dónde irían estas notas, si no estaban ya):</em>
+                             <br>
+                            "Por ejemplo, para 'Voices for Change', debajo de '¿Cómo usaríamos Scratch?', pusieron:"
+                             <br>
+                            *   "<strong>Mover:</strong> Bloques de flechas 'cuando tecla [flecha] presionada' -> 'mover X pasos'. (Dibujo: bloque flecha + bloque move)."
+                             <br>
+                            *   "<strong>Tocar Luz:</strong> Bloque 'si tocando [luz]?' o 'cuando este objeto clicado'. (Dibujo: bloque if touching o when clicked)."
+                             <br>
+                            *   "<strong>Sonar Voz:</strong> Bloque 'tocar sonido [voz]'. (Dibujo: bloque play sound)."
+                             <br>
+                            *   "<strong>Mostrar Info:</strong> Bloque 'mostrar variable [país]' o 'decir [país] por 2 segundos'. (Dibujo: bloque show variable o say)."
+                            <br><br>
+                             <em>(Ayudar a los equipos a identificar 1 o 2 bloques clave para su interacción principal).</em>
+                        </td>
+                    </tr>
+                     <tr>
+                         <td>
+                            <strong>Paso 2:</strong> Concluir actividad. Marcar entregable parcial actualizado.
+                         </td>
+                        <td>
+                            "¡Perfecto! Ahora su mapa T-Bar tiene las pistas secretas para Scratch."
+                            <br><br>
+                            <em>(Consejo Maestro: No busca ser una lista exhaustiva de bloques, sino el inicio de la planificación de la programación, conectando el concepto con la herramienta.)</em>
+                            <br><br>
+                            <em>(Entregable Parcial: T-Bar por equipo con notas/dibujos de bloques Scratch clave añadidos.)</em>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 4: Presentación Prototipos + Retro (Like, Wish, Wonder) -->
+        <div id="activity-4" class="activity" data-time="7">
+            <div class="banner" onclick="toggleContent('activity_4_content')">
+                 <div class="title">📢 Actividad 4: Presentación Prototipos + Retro (LWW) ⏰ Tiempo: 7 minutos</div>
+            </div>
+            <div id="activity_4_content" class="content">
+                 <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                             <strong>Paso 1:</strong> Proyectar la <strong>Diapositiva 26</strong>: "¡Showtime! Presentando Nuestro Arte Interactivo". Explicar la dinámica de presentación (1 min por equipo) y los puntos a cubrir.
+                        </td>
+                        <td>
+                            "¡Artistas digitales, llegó el momento del <strong>Showtime</strong>! Cada equipo va a presentar su prototipo final T-Bar. Tienen solo <strong>1 minuto</strong> para contarnos lo más importante:"
+                            <br>
+                            "1. Nombre de su Arte (¡pónganle un título!)."
+                            <br>
+                            "2. Qué problema ODS ayuda."
+                            <br>
+                            "3. Cómo funciona (la interacción principal)."
+                        </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             <strong>Paso 2:</strong> Proyectar la <strong>Diapositiva 27</strong>: "Retro con Superpoderes: Like, Wish, Wonder". Explicar la dinámica de retroalimentación LWW y distribuir notas adhesivas.
+                         </td>
+                         <td>
+                            "Mientras un equipo presenta, los demás serán 'Críticos con Superpoderes'. Van a usar la táctica 'Like, Wish, Wonder' (Me Gusta, Ojalá, Me Pregunto). Tomen 3 notas adhesivas (o usen Miro):"
+                             <br><br>
+                             *   "👍 <strong>LIKE (Me Gusta):</strong> Escribe UNA cosa que te encantó del proyecto."
+                             <br>
+                             *   "🌠 <strong>WISH (Ojalá):</strong> Escribe UNA sugerencia para mejorarlo (empieza con 'Ojalá...')."
+                              <br>
+                             *   "🤔 <strong>WONDER (Me Pregunto):</strong> Escribe UNA pregunta interesante sobre el proyecto (empieza con 'Me pregunto si...')."
+                         </td>
+                    </tr>
+                     <tr>
+                         <td>
+                            <strong>Paso 3:</strong> Gestionar las presentaciones (1 min/equipo) y la entrega de feedback LWW.
+                         </td>
+                        <td>
+                             "Escriban sus comentarios LWW mientras escuchan. Al final de la presentación de 1 minuto, ¡entréguenle rápidamente sus notas al equipo! ¡Sean amables y constructivos!"
+                              <br><br>
+                             "¡Equipo 1, listos para presentar su T-Bar!"
+                             <br><br>
+                            <em>(Gestionar las presentaciones de 1 minuto y la entrega rápida de notas LWW. Asegurarse de que todos los equipos presenten).</em>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Actividad 5: Cierre y Próximos Pasos -->
+        <div id="activity-5" class="activity" data-time="3">
+            <div class="banner" onclick="toggleContent('activity_5_content')">
+                 <div class="title">🏁 Actividad 5: Cierre y Próximos Pasos ⏰ Tiempo: 3 minutos</div>
+            </div>
+            <div id="activity_5_content" class="content">
+                 <table>
+                     <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                             <strong>Paso 1:</strong> Felicitar y resumir logros. Proyectar <strong>Diapositiva 28</strong> (Opcional: puede ser una imagen final de celebración o resumen).
+                        </td>
+                        <td>
+                            "¡¡¡BRAVO, ARTISTAS DIGITALES!!! ¡Han completado la receta 'ExplorArte Digital' y tienen prototipos conceptuales INCREÍBLES para su 'Arte Interactivo por la Tierra'!"
+                             <br><br>
+                            "Han explorado problemas ODS, han dibujado ideas locas, han definido interacciones mágicas y han creado un plan maestro en su T-Bar. ¡Y además, han aprendido a dar y recibir comentarios como profesionales con Like, Wish, Wonder!"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 2:</strong> Explicar los próximos pasos (construcción en Scratch) y cerrar el taller.
+                        </td>
+                        <td>
+                           "¿Qué sigue ahora? ¡Lo más emocionante! Usarán este prototipo T-Bar y los comentarios LWW que recibieron como guía para <strong>construir su obra de arte interactiva DE VERDAD en Scratch</strong> en las próximas semanas."
+                           <br><br>
+                           "¡Estoy súper orgulloso de su creatividad y su compromiso con el planeta! Han demostrado que el arte y la tecnología pueden unirse para hacer del mundo un lugar mejor. ¡Sigan creando, sigan explorando y sigan cambiando el mundo con su arte digital!"
+                            <br><br>
+                           "¡Taller 'DigitalODS: El Arte del Cambio' completado! ¡Felicidades, artistas innovadores!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div> <!-- Fin del container -->
+</body>
+</html>
